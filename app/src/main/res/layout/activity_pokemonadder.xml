@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <Toolbar
+        android:id="@+id/pokemonadder_toolbar"
+        style="@style/Toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            style="@style/ToolbarTitle"
+            android:elevation="20dp"
+            android:text="@string/pokemonadder_title"
+            />
+    </Toolbar>
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineh"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.60"
+        android:orientation="horizontal" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelinev"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.50"
+        android:orientation="vertical" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineh" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonadder_toolbar" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgrey"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type1" />
+
+    <TextView
+        android:id="@+id/pkm_name"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="STEELIX"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonadder_toolbar" />
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="GROUND"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pkm_name" />
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:text="STEEL"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guidelineh"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@id/pkm_name" />
+
+    <TextView
+        android:id="@+id/ability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="SHEER FORCE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type2" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="521"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@+id/ability" />
+
+    <TextView
+        android:id="@+id/nature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_margin="5dp"
+        android:text="ADAMANT"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ability"
+        />
+
+    <TextView
+        android:id="@+id/pke_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="226"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nature" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:srcCompat="@drawable/ss_launcher_icon_sm" />
+
+    <TextView
+        android:id="@+id/reroll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="REROLL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineh" />
+
+    <Button
+        android:id="@+id/repkebtn"
+        android:onClick="rerollname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Pokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reroll_title"
+        />
+
+    <Button
+        android:id="@+id/reabbtn"
+        android:onClick="rerollability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ability"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@id/reroll_title"
+        />
+
+    <Button
+        android:id="@+id/renatbtn"
+        android:onClick="rerollnature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Nature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repkebtn"
+        />
+
+    <Button
+        android:id="@+id/retype1"
+        android:onClick="rerolltype1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type 1"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@id/reabbtn"
+        />
+
+    <Button
+
+        android:id="@+id/retype2"
+        android:onClick="rerolltype2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Type 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/renatbtn"
+         />
+
+    <Button
+        android:id="@+id/exbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="4dp"
+        android:text="Reroll Id"
+        android:onClick="rerollId"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@id/retype1" />
+
+
+    <ProgressBar
+
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@id/guidelineh"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/primaryYellow"
+        android:max="720"
+        />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <Button
+        android:id="@+id/restatbtn"
+        android:onClick="rerollstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="STAT"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev"
+        app:layout_constraintTop_toTopOf="@+id/guidelineh" />
+
+
+</android.support.constraint.ConstraintLayout>

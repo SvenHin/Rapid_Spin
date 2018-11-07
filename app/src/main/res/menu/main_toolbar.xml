@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/newRunBtn"
+        android:icon="@drawable/baseline_playlist_add_white_36dp"
+        android:title="@string/new_run"
+        android:showAsAction="ifRoom"
+    />
+
+    <item
+        android:id="@+id/prefBtn"
+        android:icon="@drawable/baseline_settings_white_36dp"
+        android:title="@string/setting_title"
+        android:showAsAction="ifRoom"
+        />
+
+</menu>

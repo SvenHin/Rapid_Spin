@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sandshrew</string>
+    <string name="setting_title">Preferences</string>
+    <string name="pref_time_setting">test</string>
+    <string name="pref_onoff_btn">On/Off</string>
+    <string name="new_run">New Run</string>
+    <string name="add_pke_btn">Add Pokemon</string>
+    <string name="pokemonadder_title">Pokemon Generator</string>
+    <string name="pkm_handler_title">Your Pokemon</string>
+</resources>

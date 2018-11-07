@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+    <style name="Toolbar" parent="android:Theme.Material.Light">
+        <item name="android:background">@color/primaryYellow</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="ToolbarTitle" parent="android:Theme.Material.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Buttons" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:innerRadius">2dp</item>
+        <item name="android:elevation">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+
+
+
+
+    </style>
+
+</resources>
